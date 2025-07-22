@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #eee;
+}
+
+.mood-box {
+  width: 50%;
+  height: 150px;
+  background-color: #a182d7; /* Default: blue (desktop) */
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+}
+
+/* Add mood message */
+.mood-box::after {
+  content: "Feeling cry🥹";
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 📱 Mobile: red background & message */
+@media (max-width: 600px) {
+  .mood-box {
+    background-color: #ff4d4d;
+  }
+
+  .mood-box::after {
+    content: "Feeling bold";
+  }
+}
+
+/* 📱 Tablet: yellow background & message */
+@media (min-width: 601px) and (max-width: 900px) {
+  .mood-box {
+    background-color: #ffd700;
+  }
+
+  .mood-box::after {
+    content: "Feeling bright";
+  }
+}

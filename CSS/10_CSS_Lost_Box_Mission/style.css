@@ -1,0 +1,19 @@
+ body {
+      height: 100vh; /* Full height */
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;     /* Center vertically */
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .lost-box {
+      background-color: rebeccapurple; /* Bright yellow */
+      padding: 40px;
+      border-radius: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }

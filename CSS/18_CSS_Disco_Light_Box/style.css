@@ -1,0 +1,40 @@
+body {
+  background-color: #242121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.disco-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 110px;
+  animation: spinDisco 3s linear infinite;
+
+}
+
+/* Disco animation: spin + color change */
+@keyframes spinDisco {
+  0% {
+    transform: rotate(0deg);
+    background-color: red;
+  }
+  25% {
+    transform: rotate(90deg);
+    background-color: blue;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: lime;
+  }
+  75% {
+    transform: rotate(270deg);
+    background-color: violet;
+  }
+  100% {
+    transform: skew(360deg);
+    background-color: red;
+  }
+}

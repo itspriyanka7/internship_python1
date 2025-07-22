@@ -1,0 +1,17 @@
+  body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  /* Centers horizontally */
+      align-items: center;      /* Centers vertically */
+      background-color: #f0f0f0;
+    }
+
+    .center-box {
+      background-color: rebeccapurple;
+      color: white;
+      padding: 40px;
+      font-size: 24px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }

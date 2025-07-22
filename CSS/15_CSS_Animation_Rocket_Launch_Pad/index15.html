@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rocket Launch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="launch-pad">
+    <div class="rocket" onclick="launchRocket()">🚀</div>
+  </div>
+  
+  <script>
+    function launchRocket() {
+      const rocket = document.querySelector('.rocket');
+      rocket.classList.add('launch');
+
+      // Optional: Reset for multiple launches
+      setTimeout(() => {
+        rocket.classList.remove('launch');
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

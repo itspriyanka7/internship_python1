@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  display: none;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* 👒 Desktop - show Hat */
+@media (min-width: 901px) {
+  .hat {
+    display: block;
+  }
+}
+
+/* 🧣 Tablet - show Scarf */
+@media (min-width: 601px) and (max-width: 900px) {
+  .scarf {
+    display: block;
+  }
+}
+
+/* 🕶 Mobile - show Sunglasses */
+@media (max-width: 600px) {
+  .sunglasses {
+    display: block;
+}
+}

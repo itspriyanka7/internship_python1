@@ -1,0 +1,29 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:whitesmoke;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.pizza-menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffe4b5;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgb(206, 133, 133);
+}
+
+.pizza-menu a {
+  text-decoration: none;
+  color: #d2691e;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.pizza-menu a:hover {
+  transform: scale(1.1);
+  color: #ff4500;
+}

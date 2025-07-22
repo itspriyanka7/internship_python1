@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.hover-button {
+  padding: 25px 60px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Pseudo-class :hover for magic effect */
+.hover-button:hover {
+  background-color: #ff1493;
+  font-size: 1.4em;
+  transform: rotate(25deg) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}

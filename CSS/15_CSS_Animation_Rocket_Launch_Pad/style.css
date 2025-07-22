@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/043/536/162/small_2x/gleaming-starry-background-with-blue-night-sky-and-mountain-silhouette-photo.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.launch-pad {
+  padding-bottom: 30px;
+}
+
+.rocket {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.launch {
+  animation: blastoff 1.5s ease-in forwards;
+}
+
+@keyframes blastoff {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-100px) scale(1.1);
+  }
+  100% {
+    transform: translateY(-500px) scale(0.8);
+    opacity: 0;
+  }
+}

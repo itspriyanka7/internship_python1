@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  margin: 0;
+}
+
+.robot {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  transition: transform 0.5s ease;
+}
+
+.head {
+  width: 60px;
+  height: 60px;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.body {
+  width: 100px;
+  height: 100px;
+  background-color: #888;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 10px;
+}
+
+.arm {
+  width: 20px;
+  height: 60px;
+  background-color: #444;
+  position: absolute;
+  top: 70px;
+}
+
+.left-arm {
+  left: -20px;
+}
+
+.right-arm {
+  right: -20px;
+}
+
+.leg {
+  width: 20px;
+  height: 60px;
+  background-color: #333;
+  position: absolute;
+  top: 160px;
+}
+
+.left-leg {
+  left: 20px;
+}
+
+.right-leg {
+  right: 20px;
+}
+
+/* 👇 Media Query: Robot falls apart on small screens */
+@media (max-width: 600px) {
+  .robot {
+    transform: rotate(90deg);
+  }
+
+  .left-arm {
+    transform: translate(-30px, 30px) rotate(-45deg);
+  }
+
+  .right-arm {
+    transform: translate(30px, 30px) rotate(45deg);
+  }
+
+  .left-leg {
+    transform: translate(-20px, 40px) rotate(20deg);
+  }
+
+  .right-leg {
+    transform: translate(20px, 40px) rotate(-20deg);
+  }
+}

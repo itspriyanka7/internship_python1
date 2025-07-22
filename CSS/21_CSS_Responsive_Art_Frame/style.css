@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fefefe;
+}
+
+.art-frame {
+  border: 5px solid #444;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  text-align: center;
+  background: rebeccapurple;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  font-size: 24px;
+  color: #ecdede;
+  margin: 0;
+}
+
+/* 📱 Mobile: Small font & padding */
+@media (max-width: 600px) {
+  .art-frame {
+    padding: 20px;
+    border-width: 4px;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Tablet: Medium font & padding */
+@media (min-width: 601px) and (max-width: 900px) {
+  .art-frame {
+    padding: 30px;
+    border-width: 6px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+}
+
+/* 🖥️ Desktop: Big frame & font */
+@media (min-width: 901px) {
+  .art-frame {
+    padding: 50px;
+    border-width: 10px;
+  }
+
+  .quote {
+    font-size: 28px;
+  }
+}
