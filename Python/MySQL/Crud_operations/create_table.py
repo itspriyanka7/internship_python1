@@ -1,6 +1,8 @@
 from db_conn import get_connection
 
 def create_table():
+    conn = None
+    cursor = None
     try:
         conn = get_connection()
         if conn is None:
@@ -19,6 +21,8 @@ def create_table():
     except Exception as e:
         print(f"❌ Error creating table: {e}")
     finally:
-        if conn:
+        if cursor:
             cursor.close()
+        if conn:
             conn.close()
+            print("🔌 Connection Closed")
